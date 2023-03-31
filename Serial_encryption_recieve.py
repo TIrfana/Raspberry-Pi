@@ -9,7 +9,7 @@ ser=serial.Serial ('/dev/serial0',115200,
 bytesize=serial.EIGHTBITS,
 parity=serial.PARITY_NONE, 
 stopbits=serial.STOPBITS_ONE, 
-timeout=1) #Order of parameters diff from recieving.py ##still works
+timeout=1) 
 
 
 file_locationPT = "/home/pi/Documents/PT.txt" 
@@ -18,8 +18,6 @@ open(file_locationPT, "w") #clear file
 open(file_locationCT, "w")
 
 
-#counter=0
-#while counter<0:
 while 1:
     time.sleep(0.05)
     x=ser.read()
@@ -38,7 +36,7 @@ while 1:
             return formatted
 
         x=0 
-        while x<1:#change to 1
+        while x<1:
             time.sleep(1)
               
             plaintext=get_random_bytes(16) 
@@ -67,5 +65,5 @@ while 1:
             file_PT.close()
             file_CT.close()
     ser.write(b'e')
-    #counter+=1
+
 
