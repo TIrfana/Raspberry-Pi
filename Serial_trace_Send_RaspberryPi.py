@@ -6,13 +6,9 @@ Created on Wed Feb  1 12:55:15 2023
 @author: thilrasirfana
 """
 
-import binascii
-from Crypto.Random import get_random_bytes
 from typing import Any
 import time
 import serial
-from numpy import ndarray
-
 from osc_library import Lecroy
 import numpy as np
 from datetime import datetime
@@ -81,7 +77,7 @@ while counter < c:
         print('After signal')
 
         with h5py.File(file_locationT,'a') as hf:
-            hf['trace_data_set'][tcounter]= numpy.asarray(interpreted_formt[:]) #save trace
+            hf['trace_data_set'][tcounter]= np.asarray(interpreted_formt[:]) #save trace
         tcounter += 1
 
 
