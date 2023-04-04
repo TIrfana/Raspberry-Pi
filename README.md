@@ -2,7 +2,7 @@
 
 
 ## Project Description
-Collect traces,plaintext and ciphertext for Side Channel Attack on AES128 encryption algorithm
+Collect traces,plaintext and ciphertext for Side Channel Attack on AES128 encryption algorithm in ECB mode.
 
 The computer collects the traces while the RPi collects the plaintext and ciphertext.
 - The computer code can be altered to collect traces,plaintext and ciphertext for convenience, which is implemented in [Pico_C_program](https://github.com/TIrfana?tab=repositories) for reference. The RPi code has to be altered accordingly as well which is also in the link. However sending longer texts over serial communication will increase time taken to run project.  
