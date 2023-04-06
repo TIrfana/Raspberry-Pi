@@ -5,7 +5,7 @@
 Collect traces,plaintext and ciphertext for Side Channel Attack on AES128 encryption algorithm in ECB mode.
 
 The computer collects the traces while the RPi collects the plaintext and ciphertext.
-- The computer code can be altered to collect traces,plaintext and ciphertext for convenience, which is implemented in [Pico_C_program](https://github.com/TIrfana?tab=repositories) for reference. The RPi code has to be altered accordingly as well which is also in the link. However sending longer texts over serial communication will increase time taken to run project.  
+- The computer code can be altered to collect traces,plaintext and ciphertext for convenience, which is implemented in [Pico_C_program](https://github.com/TIrfana/Pico_C_program) for reference. The RPi code has to be altered accordingly as well which is also in the link. However sending longer texts over serial communication will increase time taken to run project.  
 
 ## Directions
 Download [PyCharms](https://github.com/TIrfana/Raspberry-Pi/tree/main/For_Com/PyCharms) into your laptop and open in PyCharm.
@@ -20,7 +20,7 @@ Download [For_RPi](https://github.com/TIrfana/Raspberry-Pi/tree/main/For_RPi) in
 1. Install activedoso.exe file inside the activedso.zip [here](https://github.com/TIrfana/Raspberry-Pi/blob/main/For_Com/activedso.zip)
 
 ### - Running experiment
-1. Run RPi first followed by laptop
+1. Run RPi python script first followed by laptop 
  
 
 ## Resources
